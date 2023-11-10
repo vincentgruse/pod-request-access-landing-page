@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;400&display=swap');
+
+:root {
+    --clr-emphasis: #54E6AF;
+    --clr-button-hover: #B3FFE2;
+    --clr-input-background: #2C344B;
+    --clr-button-text: #121725;
+    --clr-light-text: #ffffff;
+    --clr-body-text: #C2CBE5;
+    --clr-social: #5A668A;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Chivo', sans-serif;
+    overflow-x: hidden;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+/*Form and button styling*/
+#form button {
+    font: inherit;
+    color: var(--clr-button-text); 
+    background: var(--clr-emphasis);
+    font-size: small;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border: 0;
+    border-radius: 100vw;
+    cursor: pointer;
+}
+
+#form button:hover,
+button:focus-visible {
+    background: var(--clr-button-hover);
+}
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: var(--clr-emphasis);
+}
+
+.input-control .success {
+    color: var(--clr-emphasis);
+    font-size: 12px;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 12px;
+}
