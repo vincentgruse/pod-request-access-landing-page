@@ -22,6 +22,35 @@ body {
     background-repeat: no-repeat;
 }
 
+.background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--clr-button-text);
+}
+
+.background::before {
+    content: "";
+    background-image: url(./assets/desktop/image-host.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-repeat: no-repeat;
+  }
+
+  .background > * {position: relative;}
+
+  .logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 /*Form and button styling*/
 #form button {
@@ -66,4 +95,55 @@ button:focus-visible {
 .input-control .error {
     color: #ff3860;
     font-size: 12px;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+      background-color: rgba(18,23,37,1.0);
+    }
+  
+    .background {
+      display: block;
+      background: url(./assets/tablet/image-host-tablet.jpg) top right no-repeat,
+        url(./images/bg-pattern-dots.svg) bottom left 30px no-repeat,
+        rgba(18,23,37,1.0);
+      padding-left: 39px;
+    }
+
+    .background::before {
+        background-image: none;
+    }
+    
+    .logo {
+    padding-top: 50px;
+    margin: 0 0 152px 0;
+    }
+
+    .section {
+        display: flex;
+        flex-direction: column;
+        width: 723px;
+        height: 509px;
+        background-color: rgba(18,23,37,1.0);
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    .background {
+      display: block;
+      background: url(./assets/images/bg-pattern-dots.svg) top 715px right no-repeat,
+        url(./assets/desktop/image-host-desktop.jpg) top 127px right no-repeat,
+        var(--clr-button-text);
+    }
+  
+    .logo {
+      padding-top: 102px;
+      margin: 0 0 103px 0;
+    }
+  
+    .content {
+      width: 723px;
+      height: 509px;
+    }
 }
