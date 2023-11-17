@@ -30,7 +30,7 @@ Users should be able to:
 - ![](./screenshots/desktop_screenshot.png)
 - ![](./screenshots/tablet_screenshot.png)
 - ![](./screenshots/mobile_screenshot.png)
-
+-
 - Input Validation:
 - 
 - ![](./screenshots/input_validation1.png)
