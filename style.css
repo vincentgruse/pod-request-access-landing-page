@@ -22,6 +22,7 @@ body {
   font-family: 'Chivo', sans-serif;
   font-weight: 100;
   overflow-x: hidden; /*clipped if overflow*/
+  overflow-y: hidden;
   width: 100vw;
   height: 100vh;
   background: url(./assets/images/bg-pattern-dots.svg) top 715px right no-repeat,
@@ -209,7 +210,7 @@ input {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   body {
     overflow-x: hidden;
     overflow-y: hidden;
@@ -223,7 +224,6 @@ input {
     margin-bottom: 57px;
   }
   .container {
-    display: flex; /*flex container*/
     height: 100vh;
     width: 100vw;
     flex-direction: column;
@@ -235,9 +235,6 @@ input {
   }
 
   .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: flex-start;
     width: 327px;
     height: 398px;
@@ -250,14 +247,7 @@ input {
     width: 327px;
     font-size: 26px;
     line-height: 38px;
-    text-transform: uppercase;
     text-align: center;
-    color: var(--clr-emphasis);
-  }
-  
-  h1 strong {
-    font-weight: inherit;
-    color: var(--clr-light-text);
   }
   
   p {
@@ -267,14 +257,12 @@ input {
     font-size: 15px;
     line-height: 25px;
     text-align: center;
-    color: var(--clr-body-text);
   }
 
   .social-links {
     margin-top: 29px;
     height: 17px;
     width: 315px;
-    justify-content: space-between;
     order: 0;
   }
 
@@ -300,64 +288,33 @@ input {
 
   form {
     margin-top: 48px;
-    position: relative;
-    font-family: inherit;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 28px;
     width: 326px;
   }
   
 
   #form button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 0;
     margin-top: 62px;
     width: 326px;
     height: 46px;
-    color: var(--clr-button-text); 
-    background: var(--clr-emphasis);
-    font-size: small;
-    font-weight: bold;
-    border: 0;
     border-radius: 100vw;
-    cursor: pointer;
   }
 
   input {
     border: 0;
-    padding: 9px 32px;
-    background: var(--clr-input-background);
-    border-radius: 100vw;
     height: 46px;
     width: 327px;
-    color: var(--clr-light-text);
-    opacity: 1.0;
-    margin-bottom: 16px;;
   }
 
   .input-control .success {
-    color: var(--clr-emphasis);
-    position: absolute;
     margin-top: 40px;
     margin-left: 32px;
     font-size: 10px;
   }
   
   .input-control .error {
-    position: absolute;
     margin-top: 40px;
     margin-left: 32px;
-    color: var(--clr-error-text);
     font-size: 10px;
-  }
-  
-  .input-control.error input {
-    border: var(--clr-error-text);
-    border-width: 3px;
-    border-style: solid;
   }
 }
