@@ -22,17 +22,20 @@ Users should be able to:
 - View the optimal layout depending on their device's screen size
 - See hover states for interactive elements
 - Receive an error message when the form is submitted if:
-  - The `Email address` field is empty should show "Oops! Please add your email"
-  - The email is not formatted correctly should show "Oops! Please check your email"
+  - The `Email address` field is empty and should show "Oops! Please add your email"
+  - The email is not formatted correctly and should show "Oops! Please check your email"
 
 ### Screenshot
 
-![](./screenshots/desktop_screenshot.png)
-![](./screenshots/tablet_screenshot.png)
-![](./screenshots/mobile_screenshot.png)
-![](./screenshots/input_validation1.png)
-![](./screenshots/input_validation2.png)
-![](./screenshots/input_validation3.png)
+- ![](./screenshots/desktop_screenshot.png)
+- ![](./screenshots/tablet_screenshot.png)
+- ![](./screenshots/mobile_screenshot.png)
+
+- Input Validation:
+- 
+- ![](./screenshots/input_validation1.png)
+- ![](./screenshots/input_validation2.png)
+- ![](./screenshots/input_validation3.png)
 
 ### Links
 
