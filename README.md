@@ -30,9 +30,8 @@ Users should be able to:
 - ![](./screenshots/desktop_screenshot.png)
 - ![](./screenshots/tablet_screenshot.png)
 - ![](./screenshots/mobile_screenshot.png)
--
-- Input Validation:
-- 
+
+### Input Validation
 - ![](./screenshots/input_validation1.png)
 - ![](./screenshots/input_validation2.png)
 - ![](./screenshots/input_validation3.png)
