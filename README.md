@@ -27,12 +27,9 @@ Users should be able to:
 
 ### Screenshot
 
-Screenshots:
 ![](./screenshots/desktop_screenshot.png)
 ![](./screenshots/tablet_screenshot.png)
 ![](./screenshots/mobile_screenshot.png)
-
-Input validation:
 ![](./screenshots/input_validation1.png)
 ![](./screenshots/input_validation2.png)
 ![](./screenshots/input_validation3.png)
